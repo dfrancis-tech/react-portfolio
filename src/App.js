@@ -3,6 +3,7 @@ import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
+import About from './components/About';
 
 function App() {
   const [navSelected, setNavSelected] = useState(false);
@@ -14,21 +15,28 @@ function App() {
     { name: 'Resume', description: 'Download my resume to know more about me!' }
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
   function categorySelected(name) {
         
     switch (name) {
        case "Contact":
            console.log(`${name} clicked`);
          return <ContactForm></ContactForm>;
+       case "About":
+           console.log(`${name} clicked`);
+         return <About/>;
        default:
          return;
      }
-};
+  };
+
   return (
     <div className="App">
-      <header >
+      
+      <header>
         <h1 id="header-logo">RF</h1>
       </header>
+
       <main className="main">
         <Nav categories={categories}
         setCurrentCategory={setCurrentCategory}
@@ -36,6 +44,7 @@ function App() {
         <Home></Home>
         {categorySelected(currentCategory.name)}
       </main>
+      
       <footer>
         <h2>Get your website built!</h2>
       <div id="social-media">
