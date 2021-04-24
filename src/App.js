@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
+import Resume from './components/Resume';
 
 function App() {
   const [navSelected, setNavSelected] = useState(false);
@@ -25,6 +26,9 @@ function App() {
        case "About":
            console.log(`${name} clicked`);
          return <About/>;
+       case "Resume":
+           console.log(`${name} clicked`);
+         return <Resume/>;
        default:
          return;
      }

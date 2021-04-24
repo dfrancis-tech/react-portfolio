@@ -63,4 +63,5 @@ footer {
 
 .fa-github:hover, .fa-linkedin:hover {
   box-shadow:5px 5px 5px 5px #d9d9d9;
+  transition-duration: 1s;
 }

@@ -4,7 +4,7 @@ import logo from '../assets/logo2.gif';
 
 function Home() {
     return (
-        <section className="">
+        <section className="home-page">
             <img src={logo} alt="logo" id="logo-image"/>
         </section>
     );
