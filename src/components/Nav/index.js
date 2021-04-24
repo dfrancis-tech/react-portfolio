@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from "../../utils/helpers";
+import Home from '../Home';
+import ContactForm from '../Contact';
 
 function Nav(props) {
     const {
@@ -9,19 +12,22 @@ function Nav(props) {
         setContactSelected
     } = props;
 
-    function categorySelected(name) {
-         console.log(`${name} clicked`);
-    };
-
+    // useEffect(() => {
+    //     document.title = capitalizeFirstLetter(currentCategory.name);
+    //   }, [currentCategory]);
     return (
             <nav>
                 <ul>
-                {categories.map((category) => (
-                        <li className="nav" key={category.name}>
-                        <span onClick={() => categorySelected(category.name)}>{category.name}</span>
+                    {categories.map((category) => (                       
+                        <li className={`nav ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
+                        <span onClick={() => {
+                            setCurrentCategory(category); 
+                            // setContactSelected(false);
+                        }}>
+                            {capitalizeFirstLetter(category.name)}
+                        </span>
                         </li>
-                    ))}
-                    
+                    ))}    
                 </ul>
             </nav>
     );

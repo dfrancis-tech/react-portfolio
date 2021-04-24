@@ -21,11 +21,26 @@ code {
   display: flex;
   align-items: left ;
   color: #947f57;
-  padding: 20%;
-
+  padding: 10%;
+  padding-right: 20%;
+  margin-bottom: 1rem;
 }
 
 #logo-image {
   margin-left: 10%;
+}
+
+.nav:hover {
+  background-color: #947f57;
+  color: #d9d9d9;
+  box-shadow:5px 10px 8px 0px #888888;
+  border-radius: 1rem;
+}
+
+.navActive {
+  background-color: #947f57;
+  color: #d9d9d9;
+  box-shadow:5px 5px 8px 0px #888888;
+  border-radius: 1rem;
 }
 

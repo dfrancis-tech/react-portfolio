@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
+import ContactForm from './components/Contact';
 
 function App() {
   const [navSelected, setNavSelected] = useState(false);
@@ -12,15 +13,28 @@ function App() {
     { name: 'About', description: 'A Little about me' },
     { name: 'Resume', description: 'Download my resume to know more about me!' }
   ]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  function categorySelected(name) {
+        
+    switch (name) {
+       case "Contact":
+           console.log(`${name} clicked`);
+         return <ContactForm></ContactForm>;
+       default:
+         return;
+     }
+};
   return (
     <div className="App">
       <header >
         <h1 id="header-logo">RF</h1>
       </header>
       <main className="main">
-        <Nav categories={categories}></Nav>
+        <Nav categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}></Nav>
         <Home></Home>
-        <div>x</div>
+        {categorySelected(currentCategory.name)}
       </main>
       <footer>
         <h2>Get your website built!</h2>
