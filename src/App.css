@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  text-align: left;
+  background-color: #d9d9d9;
+  font-family: 'Times New Roman', Times, serif;
+  color: #947f57;
 }
 
 .App-logo {
@@ -13,13 +16,13 @@
   }
 }
 
-.App-header {
+.main {
   background-color: #d9d9d9;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: row;*/
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   font-size: calc(10px + 2vmin);
   color: #947f57;
 }
@@ -35,4 +38,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+footer {
+  background-color: #a17a60;
+  color: #d9d9d9;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1%;
+}
+
+#social-media {
+  margin: 2rem;
+ 
+}
+
+.fa-github, .fa-linkedin {
+  padding: 2rem;
+  font-size: 40px;
 }

@@ -1,13 +1,11 @@
 import React from 'react';
+import logo from '../assets/logo2.gif';
 
 
 function Home() {
     return (
         <section className="">
-            
-            <h1 id="about"></h1>
-            <h1 id="about"></h1>
-            <a> Enter</a>
+            <img src={logo} alt="logo" id="logo-image"/>
         </section>
     );
 }
