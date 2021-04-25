@@ -1,7 +1,7 @@
 .App {
-  text-align: left;
+  text-align: center;
   background-color: #d9d9d9;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #947f57;
 }
 
@@ -18,13 +18,15 @@
 
 .main {
   background-color: #d9d9d9;
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
-  /*flex-direction: row;*/
+  /*flex-direction: column;*/
   align-items: center;
-  /*justify-content: center;*/
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #947f57;
+  padding-top: 0;
+  margin-top:0;
 }
 
 .App-link {
@@ -56,12 +58,14 @@ footer {
  
 }
 
-.fa-github, .fa-linkedin {
+.fa-github, .fa-linkedin, .fa-stack-overflow{
   padding: 1rem;
+  margin: 1rem;
   font-size: 40px;
+  color:#d9d9d9;
 }
 
-.fa-github:hover, .fa-linkedin:hover {
+.fa-github:hover, .fa-linkedin:hover, .fa-stack-overflow:hover {
   box-shadow:5px 5px 5px 5px #d9d9d9;
   transition-duration: 1s;
 }

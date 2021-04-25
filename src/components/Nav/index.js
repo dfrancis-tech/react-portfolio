@@ -16,8 +16,8 @@ function Nav(props) {
     //     document.title = capitalizeFirstLetter(currentCategory.name);
     //   }, [currentCategory]);
     return (
-            <nav>
-                <ul>
+            <nav className="header">
+                <ul className ="header-ul">
                     {categories.map((category) => (                       
                         <li className={`nav ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
                         <span onClick={() => {

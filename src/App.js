@@ -5,11 +5,13 @@ import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import About from './components/About';
 import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [navSelected, setNavSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
+    { name: 'Rose'},
     { name: 'Portfolio', description: 'Project Portfolio' },
     { name: 'Contact', description: 'Please contact me for any questions.' },
     { name: 'About', description: 'A Little about me' },
@@ -20,14 +22,15 @@ function App() {
   function categorySelected(name) {
         
     switch (name) {
+       case "Rose":
+         return <Home/>;
+       case "Portfolio":
+         return <Portfolio/>;
        case "Contact":
-           console.log(`${name} clicked`);
          return <ContactForm></ContactForm>;
        case "About":
-           console.log(`${name} clicked`);
          return <About/>;
        case "Resume":
-           console.log(`${name} clicked`);
          return <Resume/>;
        default:
          return;
@@ -37,26 +40,30 @@ function App() {
   return (
     <div className="App">
       
-      <header>
-        <h1 id="header-logo">RF</h1>
-      </header>
-
-      <main className="main">
+      <header className="">
         <Nav categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}></Nav>
-        <Home></Home>
-        {categorySelected(currentCategory.name)}
+        
+      </header>
+
+      <main className="main">
+      {categorySelected(currentCategory.name)}
       </main>
       
       <footer>
         <h2>Get your website built!</h2>
+        
       <div id="social-media">
+      <h4>Visit me here</h4>
         <a href="https://github.com/rosefrancis-tech" target="_blank">
           <i className="fab fa-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/francis-tech/" target="_blank">
           <i className="fab fa-linkedin"></i>
+        </a>
+        <a href="https://stackoverflow.com/users/story/14481269" target="_blank">
+          <i className="fab fa-stack-overflow"></i>
         </a>
       </div>
       <div>

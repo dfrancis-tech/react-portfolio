@@ -44,21 +44,21 @@ function ContactForm() {
     }
 
     return (
-        <section>
-          <h1>Contact me</h1>
+        <section className="contact-page container">
+          <h1>Send your message</h1>
           
           <form id="contact-form" onSubmit={handleSubmit}>
             <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                <label htmlFor="name"></label>
+                <input type="text" defaultValue={name} onBlur={handleChange} name="name" placeholder="Your Name" />
             </div>
             <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
+                <label htmlFor="email"></label>
+                <input type="email" defaultValue={email} onBlur={handleChange} name="email" placeholder="Your Email" />
             </div>
             <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
+                <label htmlFor="message"></label>
+                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" placeholder="Your message" />
             </div>
             {errorMessage && (
                 <div>
@@ -67,7 +67,7 @@ function ContactForm() {
             )}
             <button type="submit">Submit</button>
           </form>
-          <p>Alternatively, Please email me at rosefrancistoronto@gmail.com</p>
+          <p>Emails to rosefrancistoronto@gmail.com</p>
         </section>
     )
 }

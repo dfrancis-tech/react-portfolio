@@ -4,7 +4,7 @@ import photo from '../assets/photo.jpg'
 
 function About() {
     return (
-        <section className="about-page">
+        <section className="about-page container">
             <h2>
                 About Me
             </h2>

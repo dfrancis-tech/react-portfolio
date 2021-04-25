@@ -4,8 +4,8 @@ import resume from '../assets/documents/Resume.pdf'
 
 function Resume() {
     return (
-        <section className="resume-page">
-            <h2>Technologies</h2>
+        <section className="resume-page container">
+            <h2>Proficiencies</h2>
             <ul>
                 <li>HTML5/CSS3</li>
                 <li>JavaScript/jQuery</li>
