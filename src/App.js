@@ -12,10 +12,10 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
     { name: 'Rose'},
-    { name: 'Portfolio', description: 'Project Portfolio' },
-    { name: 'Contact', description: 'Please contact me for any questions.' },
-    { name: 'About', description: 'A Little about me' },
-    { name: 'Resume', description: 'Download my resume to know more about me!' }
+    { name: 'About', description: 'Project Portfolio' },
+    { name: 'Portfolio', description: 'Please contact me for any questions.' },
+    { name: 'Resume', description: 'A Little about me' },
+    { name: 'Contact', description: 'Download my resume to know more about me!' }
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 

@@ -42,6 +42,7 @@
   }
 }
 
+/*Footer starts*/
 footer {
   background-color: #947f57;
   color: #d9d9d9;
@@ -55,7 +56,6 @@ footer {
 
 #social-media {
   margin: 2rem;
- 
 }
 
 .fa-github, .fa-linkedin, .fa-stack-overflow{
@@ -69,3 +69,4 @@ footer {
   box-shadow:5px 5px 5px 5px #d9d9d9;
   transition-duration: 1s;
 }
+/*Footer ends*/

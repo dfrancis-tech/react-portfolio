@@ -1,13 +1,12 @@
 import React from 'react';
 import resume from '../assets/documents/Resume.pdf'
 
-
 function Resume() {
     return (
         <section className="resume-page container">
             <h2>Proficiencies</h2>
-            <ul>
-                <li>HTML5/CSS3</li>
+            <ul id="list-proficiencies">
+                <li>HTML5/CSS3 </li>
                 <li>JavaScript/jQuery</li>
                 <li>Foundation/Bootstrap</li>
                 <li>MondoDB/MySQL/SQLite</li>
@@ -20,7 +19,9 @@ function Resume() {
                 <li>JSON/REST</li>
                 <li>OOP/TDD</li>
             </ul>
-            <a href={resume} target="_blank" id="resume">Download Resume</a>
+            <div id="resume">
+            <a href={resume} target="_blank" id="resume-link" >Download Resume</a>
+            </div>
         </section>
     );
 }

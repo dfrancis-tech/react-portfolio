@@ -13,15 +13,7 @@ code {
     monospace;
 }
 
-/*#header-logo {
-  margin-top:0;
-  padding-left: 2%;
-}*/
-
-#logo-image {
-  margin: auto;
-}
-
+/* Header starts*/
 .header, .header-ul {
   display: flex;
   flex-direction: row;
@@ -48,7 +40,7 @@ code {
   color: #d9d9d9;
   box-shadow:5px 10px 8px 0px #888888;
   border-radius: 1rem;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .navActive {
@@ -58,23 +50,37 @@ code {
   border-radius: 1rem;
 }
 
-.portfolio-page {
-  padding-top:0;
-  margin: 1rem 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-
-  justify-content: space-around;
-  align-content: flex-start;
-  overflow: auto;
+.nav:first-child {
+  background-color: #d9d9d9;
+  color: #947f57;
+  box-shadow: none;
+  border-radius: 100%;
+  border-style:double;
+  margin-left: 5rem;
 }
+/* Header ends*/
+
+/* Home page starts*/
+
+#logo-image {
+  margin: auto;
+}
+
 .home-page {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
 }
+
+/*#header-logo {
+  margin-top:0;
+  padding-left: 2%;
+}*/
+
+/* Home page ends*/
+
+/* Conatct page ends*/
 .contact-page {
   background-color: #947f57;
   background-image: linear-gradient(#947f57, white);
@@ -86,12 +92,51 @@ code {
   border-radius: 1rem;
   margin:1rem;
 }
-#resume {
+
+.contact-button {
   text-decoration: none;
   color:#d9d9d9;
   background-color: #947f57;
   padding: 0.5rem;
   border-radius: 0.5rem;
+}
+
+.contact-button:hover {
+  background-color: #d9d9d9;
+  color: #947f57;
+  box-shadow:5px 10px 8px 0px #888888;
+  border-radius: 1rem;
+  transition-duration: 1s;
+}
+/* Contact page ends*/
+
+/* Resume page starts*/
+.resume-page {
+  text-align: left;
+  margin: 1rem;
+  background-color: #947f57;
+  background-image: linear-gradient(#947f57, white);
+  width:fit-content;
+  color:#452E0C;
+  border-radius: 1rem;
+  padding:2rem;
+}
+
+.resume-page h2 {
+  text-align: center;
+}
+
+#list-proficiencies {
+  text-align: left;
+}
+
+#resume {
+  background-color: #947f57;
+  padding: 0.5rem;
+  padding-left: 0;
+  border-radius: 0.5rem;
+  margin:auto;
+  text-align: center;
 }
 
 #resume:hover {
@@ -102,6 +147,34 @@ code {
   transition-duration: 1s;
 }
 
+#resume-link {
+  text-decoration: none;
+  color:#452E0C;
+}
+/* Resume page ends*/
+
+/* Portfolio page starts*/
+.portfolio-page {
+  padding-top:0;
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+
+  background-color: #947f57;
+  background-image: linear-gradient(#947f57, white);
+  width:fit-content;
+  color:#452E0C;
+  border-radius: 1rem;
+  padding:2rem;
+}
+
+.transparent {
+  color:#d9d9d9;
+}
 .card {
   width: 30%;
   max-height: 30vh;
@@ -137,7 +210,6 @@ code {
 .card-text:hover {
   text-decoration: none;
   color: #452E0C;
-  text-shadow: blue;
 }
 
 .card i {
@@ -153,6 +225,7 @@ code {
 #github-portfolio:hover {
   box-shadow:5px 5px 5px 5px #452E0C;
   transition-duration: 1s;
+  color: #452E0C;
 }
 
 .fa-link {
@@ -164,6 +237,29 @@ code {
 .fa-link:hover {
   box-shadow:5px 5px 5px 5px #452E0C;
   transition-duration: 1s;
-  color: ; 
+  color: #452E0C;
 }
+/* Portfolio page ends*/
 
+/* About page starts*/
+.about-page {
+  text-align: justify;
+}
+/* About page ends*/
+
+/*Media queries*/
+
+@media screen and (max-width: 980px) {
+
+  .fa-link {
+    padding: 0.25rem;
+    font-size: 20px;
+    border-radius: 0.25rem;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 10rem;
+    justify-content: space-between;
+  }
+}

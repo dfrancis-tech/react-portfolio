@@ -16,10 +16,10 @@ function Nav(props) {
     //     document.title = capitalizeFirstLetter(currentCategory.name);
     //   }, [currentCategory]);
     return (
-            <nav className="header">
-                <ul className ="header-ul">
+            <nav className="header nav-bar">
+                <ul className ="header-ul navbar-nav">
                     {categories.map((category) => (                       
-                        <li className={`nav ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
+                        <li className={`nav nav-item ${currentCategory.name === category.name && 'navActive'}`} key={category.name}>
                         <span onClick={() => {
                             setCurrentCategory(category); 
                             // setContactSelected(false);

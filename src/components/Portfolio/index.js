@@ -42,13 +42,15 @@ function Portfolio() {
         }
     ]
     return (
+      <div> 
+        <h1 className="transparent">Project Portfolio</h1>
+        <div>Below you'll find a selection of some of my projects.</div>
         <section className="portfolio-page container">
             <div className="row justify-content-around align-items-center">
               {projects.map((project, i) => (
               <div className="card" key={project.name}>
                 <img src={process.env.PUBLIC_URL + `/assets/images/${i}.gif`} className="card-img" alt={project.alt}/>
                   <div className="card-img-overlay row align-items-center justify-content-center">
-                    
                     <a className="card-title" href={project.url} target="_blank">
                     <i class="fas fa-link">{project.name}</i>
                     </a>
@@ -60,6 +62,7 @@ function Portfolio() {
               ))}
             </div>
         </section>
+      </div>
     );
 }
 
