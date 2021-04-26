@@ -13,7 +13,7 @@
 
 ## Live Project
 
-Vist the [Oh Snap! website](https://rosefrancis-tech.github.io/react-portfolio/) and enjoy the photos!
+Vist the [website](https://rosefrancis-tech.github.io/react-portfolio/)!
 
 ## Built With
 
@@ -29,6 +29,11 @@ Vist the [Oh Snap! website](https://rosefrancis-tech.github.io/react-portfolio/)
 * [create-react-app](https://www.npmjs.com/package/create-react-app)
 * [React Testing Library](https://www.npmjs.com/package/@testing-library/react)
 * [Jest DOM testing Library](https://www.npmjs.com/package/@testing-library/jest-dom)
+
+## Mock up
+The following image shows the web application's appearance and functionality.  
+
+![Mock-up image](public/assets/react-portfolio.gif "Mock-up image")
 
 ## Code Review
 
