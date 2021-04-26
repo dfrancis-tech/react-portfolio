@@ -56,7 +56,8 @@ code {
   box-shadow: none;
   border-radius: 100%;
   border-style:double;
-  margin-left: 5rem;
+  margin-left: 2rem;
+  margin-right: 15rem;
 }
 /* Header ends*/
 
@@ -251,6 +252,28 @@ code {
 
 @media screen and (max-width: 980px) {
 
+  /*Header*/
+  .header, .header-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header-ul {
+    margin: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .nav {
+    margin-bottom: 1rem;
+  }
+  .nav:first-child {
+  
+  margin-left: 5rem;
+}
+  
+  /*Portfolio page*/
   .fa-link {
     padding: 0.25rem;
     font-size: 20px;

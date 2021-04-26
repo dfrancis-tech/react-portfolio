@@ -35,12 +35,9 @@ function ContactForm() {
         console.log('errorMessage', errorMessage);
 
     }
-      
-    // console.log(formState);
-
+     
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
     }
 
     return (

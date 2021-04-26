@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function Portfolio() {
     const projects = [
         {
@@ -52,7 +51,7 @@ function Portfolio() {
                 <img src={process.env.PUBLIC_URL + `/assets/images/${i}.gif`} className="card-img" alt={project.alt}/>
                   <div className="card-img-overlay row align-items-center justify-content-center">
                     <a className="card-title" href={project.url} target="_blank">
-                    <i class="fas fa-link">{project.name}</i>
+                      <i class="fas fa-link">{project.name}</i>
                     </a>
                     <a className="card-text" href={project.github} target="_blank">
                       <i className="fab fa-github " id="github-portfolio"></i>

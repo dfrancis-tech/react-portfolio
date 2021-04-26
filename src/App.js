@@ -8,8 +8,7 @@ import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
 
 function App() {
-  const [navSelected, setNavSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
+
   const [categories] = useState([
     { name: 'Rose'},
     { name: 'About', description: 'Project Portfolio' },
@@ -20,7 +19,6 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   function categorySelected(name) {
-        
     switch (name) {
        case "Rose":
          return <Home/>;
@@ -40,38 +38,36 @@ function App() {
   return (
     <div className="App">
       
-      <header className="">
+      <header>
         <Nav categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}></Nav>
-        
       </header>
 
       <main className="main">
-      {categorySelected(currentCategory.name)}
+        {categorySelected(currentCategory.name)}
       </main>
       
       <footer>
         <h2>Get your website built!</h2>
-        
-      <div id="social-media">
-      <h4>Visit me here</h4>
-        <a href="https://github.com/rosefrancis-tech" target="_blank">
-          <i className="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/francis-tech/" target="_blank">
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a href="https://stackoverflow.com/users/story/14481269" target="_blank">
-          <i className="fab fa-stack-overflow"></i>
-        </a>
-      </div>
-      <div>
-        © 2021 Rose Francis. All rights reserved.
-      </div>
+        <div id="social-media">
+          <h4>Visit me here</h4>
+          <a href="https://github.com/rosefrancis-tech" target="_blank">
+            <i className="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/francis-tech/" target="_blank">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/story/14481269" target="_blank">
+            <i className="fab fa-stack-overflow"></i>
+          </a>
+        </div>
+        <div>
+          © 2021 Rose Francis. All rights reserved.
+        </div>
       </footer>
     </div>
   );
-}
+};
 
 export default App;
