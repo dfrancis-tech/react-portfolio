@@ -3,6 +3,18 @@ import React from 'react';
 function Portfolio() {
     const projects = [
         {
+            name: 'Woof',
+            alt: 'animation of woof',
+            url: "https://woof-2021.herokuapp.com/",
+            github: 'https://github.com/woof-board/woof'
+        },
+        {
+            name: 'Shop Shop',
+            alt: 'animation of shop shop',
+            url: "https://aqueous-eyrie-25049.herokuapp.com/",
+            github: 'https://github.com/rosefrancis-tech/shop-shop'
+        },
+        {
             name: 'EZ Budget',
             alt: 'animation of ezbudget',
             url: "https://ez-budget10.herokuapp.com/",
