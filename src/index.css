@@ -177,34 +177,43 @@ code {
   color:#d9d9d9;
 }
 .card {
-  width: 30%;
-  max-height: 30vh;
+  width: 80%;
+  max-height: 100vh;
   text-align: center;
-  background-color: #9F6D52;
+  /* background-color: #947f57; */
+  background-color:#d9d9d9;
   border: none;
   margin: 20px;
-  box-shadow:5px 10px 8px 0px #888888;
+  box-shadow:5px 10px 8px 0px #d9d9d9;
 }
 
 .card:hover .card-img {
   opacity: 0.1;
-  transition: all 0.2s;
+  transition: all 0.2s; 
+}
+
+.card:hover {
+  background-color: #35312a; 
+  color:#d9d9d9;
 }
 
 .card .card-title,
 .card .card-text {
   display: none;
+  
 }
 
 .card:hover .card-title,
 .card:hover .card-text {
   display: contents;
   font-size: 15px;
+  /* padding: 0.75 rem; */
 }
 
 .card-title,
 .card-text {
   color: #452E0C;
+  /* padding: 0.75 rem; */
 }
 
 .card-title:hover,
@@ -218,27 +227,32 @@ code {
 }
 
 #github-portfolio{
-  padding: 0.25rem;
+  padding: 0.75rem;
   font-size: 30px;
   border-radius: 0.25rem;
 }
 
 #github-portfolio:hover {
-  box-shadow:5px 5px 5px 5px #452E0C;
+  box-shadow:5px 5px 5px 5px #d9d9d9;
   transition-duration: 1s;
-  color: #452E0C;
+  /* color: #452E0C; */
 }
 
 .fa-link {
   padding: 0.25rem;
   font-size: 30px;
   border-radius: 0.25rem;
+  color: #d9d9d9;
 }
 
 .fa-link:hover {
-  box-shadow:5px 5px 5px 5px #452E0C;
+  box-shadow:5px 5px 5px 5px #d9d9d9;
   transition-duration: 1s;
-  color: #452E0C;
+  /* color: #452E0C; */
+}
+
+#project-description {
+  font-size: 1rem;
 }
 /* Portfolio page ends*/
 
