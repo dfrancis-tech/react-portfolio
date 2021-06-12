@@ -164,7 +164,6 @@ code {
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
-
   background-color: #947f57;
   background-image: linear-gradient(#947f57, white);
   width:fit-content;
