@@ -5,6 +5,9 @@ function Resume() {
     return (
         <section className="resume-page container">
             <h2>Proficiencies</h2>
+            <div id="resume">
+            <a href={resume} target="_blank" id="resume-link" >Download Resume</a>
+            </div>
             <ul id="list-proficiencies">
                 <li>HTML5/CSS3 </li>
                 <li>JavaScript/jQuery</li>
@@ -19,9 +22,6 @@ function Resume() {
                 <li>JSON/REST</li>
                 <li>OOP/TDD</li>
             </ul>
-            <div id="resume">
-            <a href={resume} target="_blank" id="resume-link" >Download Resume</a>
-            </div>
         </section>
     );
 }
